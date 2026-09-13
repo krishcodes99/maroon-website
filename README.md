@@ -19,5 +19,5 @@ A high-end, full-stack e-commerce web application engineered to blend modern lux
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR-USERNAME/maroon-ecommerce.git](https://github.com/YOUR-USERNAME/maroon-ecommerce.git)
+   git clone [https://github.com/krishcodes99/maroon-ecommerce.git](https://github.com/krishcodes99/maroon-ecommerce.git)
    cd maroon-ecommerce
