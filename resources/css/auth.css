@@ -1,0 +1,202 @@
+/* resources/css/auth.css */
+
+.auth-wrapper {
+    background: linear-gradient(135deg, #0b0204 0%, #5c0615 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.auth-card {
+    display: flex;
+    width: 1000px;
+    max-width: 100%;
+    min-height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Left Half - Image Collage Grid */
+.auth-image-side {
+    flex: 1.1;
+    background-color: #1e050a;
+    position: relative;
+    /* Replace with your local collage image path or use your grid container if it is coded HTML */
+    background-image: url('/images/style3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+}
+
+/* Fallback simple grid if you want to assemble individual image tags inside the container instead of a single background graphic */
+.collage-grid-fallback {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    opacity: 0.85;
+}
+
+.btn-back-home {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-color: #fff;
+    color: #5c0615;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 10;
+}
+
+.auth-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(92, 6, 21, 0.95) 0%, rgba(0,0,0,0) 100%);
+    z-index: 2;
+}
+
+.auth-image-text-box {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+}
+
+.auth-image-box-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.auth-image-box-tagline {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #e5cbd0;
+    margin: 0;
+}
+
+/* Right Half - Form Block */
+.auth-form-side {
+    flex: 0.9;
+    background-color: #fff;
+    padding: 50px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-brand-logo {
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: #5c0615;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+}
+
+.auth-form-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.form-link-forgot {
+    color: #5c0615;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.auth-input-field {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.auth-input-field:focus {
+    border-color: #5c0615;
+}
+
+.input-error-msg {
+    color: #b03030;
+    font-size: 0.85rem;
+    margin-top: 2px;
+}
+
+.btn-auth-submit {
+    width: 100%;
+    background-color: #5c0615;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.btn-auth-submit:disabled {
+    background-color: #9c6c74;
+    cursor: not-allowed;
+}
+
+.auth-footer-redirect {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.auth-footer-redirect a {
+    color: #5c0615;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* REGISTER */
+.auth-image-side.register-bg {
+    background-image: url('/images/style1.jpg');
+}

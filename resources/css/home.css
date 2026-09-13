@@ -1,0 +1,165 @@
+/* resources/css/home.css */
+
+.home-wrapper {
+    background: linear-gradient(135deg, #0b0204 0%, #5c0615 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.main-card {
+    display: flex;
+    width: 1000px;
+    max-width: 100%;
+    min-height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Left Half - Brand Block */
+.brand-section {
+    flex: 1.1;
+    background-color: #580c18; /* Rich solid maroon matching your layout */
+    padding: 60px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+
+.brand-subtitle {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #cca3a8;
+    margin-bottom: 10px;
+}
+
+.brand-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 0 0 30px 0;
+    letter-spacing: 1px;
+}
+
+.inline-nav {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.inline-nav a {
+    text-decoration: none;
+    color: #580c18;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.brand-tagline {
+    font-style: italic;
+    color: #e5cbd0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Right Half - Action Block */
+.action-section {
+    flex: 0.9;
+    background-color: #fff;
+    padding: 50px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.search-button {
+    background-color: #580c18;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-login {
+    width: 100%;
+    background: transparent;
+    color: #580c18;
+    border: 2px solid #580c18;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.auth-divider {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+.btn-register {
+    width: 100%;
+    background-color: #4a0711;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.social-footer {
+    margin-top: 40px;
+}
+
+.social-text {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.4rem;
+    color: #4a0711;
+}
